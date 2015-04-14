@@ -4895,6 +4895,21 @@ dc.lineChart = function (parent, chartGroup) {
             .classed('fadeout', false);
     };
 
+    _chart.legendToggle = function (d) {
+        console.log('legendToggle');
+        // if (true) {
+        //     if (_chart.isLegendableHidden(d)) {
+        //         console.log('showLine');
+        //         // _chart.showStack(d.name);
+        //     } else {
+        //         console.log('hideLine');
+        //         // _chart.hideStack(d.name);
+        //     }
+        //     //_chart.redraw();
+        //     _chart.renderGroup();
+        // }
+    };
+
     dc.override(_chart, 'legendables', function () {
         var legendables = _chart._legendables();
         if (!_dashStyle) {
